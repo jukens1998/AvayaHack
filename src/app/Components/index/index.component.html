@@ -1,0 +1,351 @@
+<div class="container-fluid">
+  <div class="row text-center">
+    <div class="col-sm-3" id="contenedor">
+      <div id="headers" class="col-sm-12">
+        <h1 id="titles">Notificaciones</h1>
+        <!-- cards-->
+        <div class="accordion" id="accordionExamples">
+          <div class="card">
+            <div class="card-header" id="headingOnes">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseOnes"
+                  aria-expanded="true"
+                  aria-controls="collapseOnes"
+                >
+                  Incendio en punto cafe
+                </button>
+              </h2>
+            </div>
+
+            <div
+              id="collapseOnes"
+              class="collapse show"
+              aria-labelledby="headingOnes"
+              data-parent="#accordionExamples"
+            >
+              <div class="card-body">
+              Se recibio una advertencia por parte de un estudiante y debido a sus emociones al dar el mensaje se le
+              asigno prioridad alta para el caso, por favor verificar, y activar el protocolo de seguridad
+
+
+
+              <!--MODAL-->
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+  Ver emociones y validar
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="../../../assets/Sentimientos.png" id="senti" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button (click)="sendPostRequest()" type="button" data-dismiss="modal" class="btn btn-primary" >Aprobar emergencia</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+              <!--Modal-->
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingTwos">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseTwos"
+                  aria-expanded="false"
+                  aria-controls="collapseTwos"
+                >
+                  Collapsible Group Item #2
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseTwos"
+              class="collapse"
+              aria-labelledby="headingTwos"
+              data-parent="#accordionExamples"
+            >
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThrees">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseThrees"
+                  aria-expanded="false"
+                  aria-controls="collapseThrees"
+                >
+                  Collapsible Group Item #3
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseThrees"
+              class="collapse"
+              aria-labelledby="headingThrees"
+              data-parent="#accordionExamples"
+            >
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--cards-->
+      </div>
+    </div>
+
+    <div id="Head" class="col-sm-6">
+      <h1><span id="titulo"> Herramientas</span> </h1>
+      <hr />
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <a routerLink="mapa" routerLinkActive="active">
+              <img
+                id="imagenes"
+                src="../../../assets/logoGrandeMapa.png"
+                alt="..."
+                class="my-5 border border-dark shadow-lg p-3 mb-5 bg-white img-fluid rounded-circle"
+              />
+            </a>
+          </div>
+          <div class="col-sm-6">
+            <a routerLink="camaras" routerLinkActive="active">
+              <img
+                id="imagenes"
+                src="../../../assets/icono-Sistemas-vision.png"
+                alt="..."
+                class="my-5 border border-dark shadow-lg p-3 mb-5 bg-white img-fluid rounded-circle"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <a routerLink="llamadas" routerLinkActive="active">
+              <img
+                id="imagenes"
+                src="../../../assets/35dc0093417a545e8812c98fd31a98df-icono-de-tel--fono-redondo-1-by-vexels.png"
+                alt="..."
+                class="my-5 border border-dark shadow-lg p-3 mb-5 bg-white img-fluid rounded-circle"
+              />
+            </a>
+          </div>
+          <div class="col-sm-6">
+            <a routerLink="alarmas" routerLinkActive="active">
+              <img
+                id="imagenes"
+                src="../../../assets/}.png"
+                alt="..."
+                class="my-5 border border-dark shadow-lg p-3 mb-5 bg-white img-fluid rounded-circle"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Header 2-->
+    <div class="col-sm-3" id="contenedor">
+      <div id="headers" class="col-sm-12">
+        <h1 id="titles">Notificaciones</h1>
+        <!-- cards-->
+
+        <div class="accordion" id="accordionExamplex">
+          <div class="card">
+            <div class="card-header" id="headingOnex">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseOnex"
+                  aria-expanded="true"
+                  aria-controls="collapseOnex"
+                >
+                  Alarma de incendio Ad portas 4 piso
+                </button>
+              </h2>
+            </div>
+
+            <div
+              id="collapseOnex"
+              class="collapse show"
+              aria-labelledby="headingOnex"
+              data-parent="#accordionExamplex"
+            >
+              <div class="card-body">
+                Fue detectado una alarma generada por el sensor de humo de adportas y se genero una alerta
+                <br>
+                <!--MODALES-->
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#exampleModalCenter"
+                >
+                  Protocolo implementado
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModalCenter"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="exampleModalCenterTitle"
+                  aria-hidden="true"
+                >
+                  <div
+                    class="modal-dialog modal-dialog-centered"
+                    role="document"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">
+                          Protocolo realizado
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Alerta recibida y confirmada <img src="../../../assets/success.png" alt="" style="height: 24px; width: auto;"> </li>
+                              <li class="list-group-item">mensajes de texto a personal de seguridad  <img src="../../../assets/success.png" alt="" style="height: 24px; width: auto;"></li>
+                              <li class="list-group-item">llamada a bomberos  <img src="../../../assets/success.png" alt="" style="height: 24px; width: auto;"></li>
+                              <li class="list-group-item">Alerta auditiva en aulas y pantallas de la U<img src="../../../assets/success.png" alt="" style="height: 24px; width: auto;"></li>
+                              <li class="list-group-item">Correo masivo a personal de la universidad <img src="../../../assets/success.png" alt="" style="height: 24px; width: auto;"></li>
+                            </ul>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-success"
+                          data-dismiss="modal"
+                        >
+                          Aceptar
+                        </button>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--MODALES-->
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwox">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseTwox"
+                  aria-expanded="false"
+                  aria-controls="collapseTwox"
+                >
+                  Forcejeo violento
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseTwox"
+              class="collapse"
+              aria-labelledby="headingTwox"
+              data-parent="#accordionExamplex"
+            >
+              <div class="card-body">
+               Se presento una alarma generada por las mcamaras de seguridad por forcejeo y agresion personal
+               y se atendio con exito y se tomaron las respectivas medidas
+               
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThreex">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseThreex"
+                  aria-expanded="false"
+                  aria-controls="collapseThreex"
+                >
+                  Fuga de Gas laboratorio edificio C
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseThreex"
+              class="collapse"
+              aria-labelledby="headingThreex"
+              data-parent="#accordionExamplex"
+            >
+              <div class="card-body">
+               Se genero una alarma por una valvula de presion del edificio C, activando el protocolo de seguridad 
+               y se cumplieron exitosamente todos los protocolos de seguridad preestablecidos
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--cards-->
+      </div>
+    </div>
+    <!--Header 1-->
+  </div>
+</div>
